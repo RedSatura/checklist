@@ -1,7 +1,76 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
 body {
 	background-color: #FF8CC8;
 	font-family: sans-serif;
 	margin: 0;
+}
+
+input[type=checkbox] {
+	
+}
+
+input[type=submit] {
+	display: absolute;
+}
+
+textarea {
+	resize: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.body-container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+.checkbox-container {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	justify-content: center;
+}
+
+.checklist-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.checklist-item {
+	display: flex;
+	border: 5px solid #402332;
+	margin: 0 auto;
+	padding: 5px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #FFD9ED;
+	gap: 10px;
+}
+
+input:checked + textarea {
+	text-decoration: line-through;
+}
+
+.list-checkbox {
+	border: none;
+}
+
+.list-text {
+	border: none;
+	align-items: center;
+	background-color: #FFD9ED;
+	font-size: 30px;
+	text-align: center;
 }
 
 .navbar {
@@ -22,6 +91,23 @@ body {
 	display: inline;
 	font-size: 2rem;
 	margin: 0 10px 0;
+}
+
+.new-item {
+	display: inline;
+}
+
+#add-item-symbol {
+	display: inline;
+	font-weight: 200;
+	font-size: 5rem;
+}
+
+#add-item-button {
+	border: none;
+	background: none;
+	font-weight: 200;
+	font-size: 5rem;
 }
 
 #navbar-title {
